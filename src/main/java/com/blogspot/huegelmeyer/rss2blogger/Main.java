@@ -1,6 +1,6 @@
 /*
  * rss2blogger
- * Copyright (C) 2008 Philipp HŸgelmeyer
+ * Copyright (C) 2008 Philipp Hgelmeyer
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -79,7 +79,7 @@ public class Main {
 						String blogId=properties.getProperty("b_id");
 						GoogleService myService = new GoogleService("blogger", "rss2blogger");
 						myService.setUserCredentials(properties.getProperty("b_username"), 
-								properties.getProperty("b.password"));
+								properties.getProperty("b_password"));
 						BloggerWriter.createPost(myService, blogId, e);
 					}
 				}
